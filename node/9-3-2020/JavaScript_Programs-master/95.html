@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input type="text"  id="inputtxt">
+<input type="button" onclick="allLetter()" value="Check Letters">
+</body>
+<script type="text/javascript">
+function allLetter()
+ { 
+ var inputtxt = document.getElementById("inputtxt").value;
+ var letters = /^[A-Za-z]+$/;
+ if(inputtxt.match(letters))
+ {
+ alert('Your name have accepted : you can try another');
+ return true;
+ }
+ else
+ {
+ alert('Please input alphabet characters only');
+ return false;
+ }
+}
+</script>
+</html>
